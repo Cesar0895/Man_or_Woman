@@ -1,6 +1,7 @@
 import { Component } from '@angular/core';
 import { NavController, NavParams } from 'ionic-angular';
 import { CurpService } from "../../services/service";
+import { HomePage } from '../home/home';
 
 /**
  * Generated class for the GeneroPage page.
@@ -22,6 +23,10 @@ export class GeneroPage {
 
   ionViewDidLoad() {
     console.log('ionViewDidLoad GeneroPage');
+  }
+
+  atras(){
+    this.navCtrl.pop();
   }
 
 }
